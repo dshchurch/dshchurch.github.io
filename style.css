@@ -1,0 +1,356 @@
+/*Created By Michael Thompson*/
+
+
+/*
+font-family: 'Archivo', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    padding: 10px 60px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+#top-mobile-bar{
+    display: inline-block;
+}
+nav h1{
+    font-family: 'Archivo', sans-serif;
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 25px;
+    color: #004d77;
+    border-right: 2px solid #004d77;
+}
+nav h1 span{
+    font-family: 'Archivo Black', sans-serif;
+}
+nav ul{
+    display: inline-block;
+    padding-left: 25px;
+}
+nav ul li{
+    font-family: 'Archivo', sans-serif;
+    display: inline-block;
+    font-size: 25px;
+    color: #004d77;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
+#menu{
+    font-family: 'Archivo', sans-serif;
+    display: none;
+    padding-right: 0px;
+    font-size: 25px;
+    color: #004d77;
+    cursor: pointer;
+}
+#banner{
+    display: flex;
+    width: 100%;
+}
+#content{
+    width: 100%;
+    background-image: 
+    linear-gradient(90deg, rgba(188,229,255, 1), rgba(188,229,255, 1),  rgba(188,229,255, 0.5) ),
+    url('img/clouds1.jpg');
+    background-size: cover;
+    padding: 50px 60px 60px 60px;
+    box-sizing: border-box;
+}
+#content h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 50px;
+    color: #004d77;
+    text-align: left;
+}
+#content p{
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+    color: #004d77;
+    width: 60%;
+}
+#content a{
+    background-color: #004d77;
+    display: inline-block;
+    margin: 30px 20px 0px 0px;
+    padding: 10px;
+    /*border: 3px solid #004d77;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s;
+}
+#content a:hover{
+    background-color: #0079b9;
+}
+#image-banner{
+    background-image: 
+    linear-gradient(90deg, rgba(188,229,255, 1), rgba(188,229,255, 1), rgba(188,229,255, 0.4) ),
+    url('img/clouds1.jpg');
+    width: 0%;
+    background-size: cover;
+}
+#quick-links{
+    padding: 60px 40px;
+    display: flex;
+}
+#quick-links article{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    box-sizing: border-box;
+}
+#quick-links h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    color: #004d77;
+    width: 100%;
+}
+#quick-links p{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2c2c2c;
+}
+#quick-links a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid #004d77;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #004d77;
+    transition: background-color 0.1s, color 0.2s;
+}
+#quick-links a:hover{
+    background-color: #004d77;
+    color: #ffffff;
+}
+#quick-links #first{
+    border-right: 3px solid #004d77;
+}
+#next-services{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#next-services h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 35px;
+    color: #004d77;
+    margin-bottom: 30px;
+}
+#next-services table, th, td {
+    border: 2px solid #004d77;
+    padding: 10px 50px 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #161616;
+  }
+#magazine{
+    display: flex;
+    padding: 60px;
+}
+#magazine div{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#magazine h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    color: #004d77;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#magazine p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2c2c2c;
+}
+#magazine a{
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 10px;
+    border: 3px solid #004d77;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #004d77;
+    transition: background-color 0.1s, color 0.2s;
+}
+#magazine a:hover{
+    background-color: #004d77;
+    color: #ffffff;
+}
+footer{
+    background-color: #00111a;
+    width:100%;
+    color: white;
+    padding: 60px;
+}
+#contact{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact address{
+    width: 50%;
+    text-align: center;
+}
+#contact address h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+}
+#contact address h2{
+    line-height: 25px;
+    font-size: 18px;
+}
+#contact address a{
+    color:white;
+    text-decoration: none;
+    line-height: 35px;
+}
+@media (max-width: 1000px){
+    #content{
+        background-image: 
+        linear-gradient(90deg, rgba(188,229,255, 0.9), rgba(188,229,255, 0.9), rgba(188,229,255, 0.8), rgba(188,229,255, 0.8), rgba(188,229,255, 0.8) ),
+        url('img/clouds1.jpg');
+    }
+}
+@media (max-width: 750px){
+    #magazine a{
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 815px){
+    nav{
+        padding: 10px 20px;
+    }
+    #menu{
+        display:inline-block;
+    }
+    #top-mobile-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+        padding-left: 0px;
+    }
+    nav ul li{
+        display: block;
+        margin: 0px;
+        text-align: center;
+        padding: 5px 0px;
+    }
+    nav h1{
+        border:none;
+        padding: 0px;
+    }
+}
+@media (max-width: 725px){
+    #content{
+        background-image: 
+        linear-gradient(90deg, rgba(188,229,255, 0.9), rgba(188,229,255, 0.9), rgba(188,229,255, 0.8), rgba(188,229,255, 0.8) ),
+        url('img/clouds1.jpg');
+    }
+    #content p{
+        width: 80%;
+    }
+    #content h1{
+        font-size: 60px;
+    }
+    #magazine{
+        flex-direction: column;
+    }
+    #magazine div{
+        width:100%;
+    }
+    #magazine a{
+        margin: 20px 0px 0px 0px;
+    }
+}
+@media (max-width: 660px){
+    #quick-links{
+        flex-direction: column;
+    }
+    #quick-links article{
+        padding: 0px 20px;
+        width: 100%;
+    }
+    #quick-links #first{
+        margin-bottom: 40px;
+        border-right: none;
+    }
+    #next-services table, th, td {
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+      }
+    #content h1{
+        font-size: 50px;
+    }
+    footer{
+        padding:20px;
+    }
+    #contact{
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    #content{
+        padding: 30px 15px;
+    }
+    #content p{
+        width: 100%;
+    }
+    #content h1{
+        font-size: 40px;
+    }
+    #quick-links{
+        padding: 25px 15px;
+    }
+    #quick-links article{
+        padding: 0px;
+    }
+    #next-services{
+        padding: 15px;
+    }
+    #next-services table, th, td {
+        padding: 10px 5px 10px 5px;
+        font-size: 18px;
+    }
+    #magazine{
+        padding: 25px 15px;
+    }
+}

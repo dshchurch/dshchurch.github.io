@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>About Us - DSH Church</title>
+    <script>
+        function toggleMenu() {
+            
+            var menu = document.getElementById("menu-list")
+            if(menu.style.display === "block") {
+                menu.style.display = "none";
+            }
+            else{
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div id="top-mobile-bar">
+        <h1><span>DSH</span> Church</h1>
+        <a id="menu" onclick= "toggleMenu()" >Menu</a>
+        </div>
+        <ul id="menu-list">
+            <a href="../"><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href="../whats-on"><li>What's On?</li></a>
+            <a href="../help.pdf"><li>Help</li></a>
+        </ul>
+    </nav>
+
+<header id="title-bar">
+    <h1>About Us</h1>
+</header>
+
+<div id="container">
+<section id="about-us-text">
+    <p>Hello and welcome.
+        We are a church family serving the communities of Hopeman, Duffus and Spynie. We are part of the wider church family of the Church of Scotland and of God’s church around the world and through time.
+        We are people from in and around these communities, welcoming everyone just as we are, because God loves us all just as we are.
+        Together we are learning God’s ways of life and love, and trying to live those out.
+        We’re learning through mistakes and weakness, questions and beliefs, actions and words – all held and transformed in God’s love.
+        We are trying to be a church family for and with all ages. 
+        We are trying to follow Jesus, which will change us and help us play our part in changing the world.
+    </p>
+</section>
+
+<section id="links">
+    <article>
+        <h1>Our commitments</h1>
+        <ul>
+            <a href="Eco-Congregation.pdf">
+                <li>Eco Congregation</li>
+            </a>
+            <a href="With-Refugees-Scotland.pdf">
+                <li>With Refugees Scotland</li>
+            </a>
+            <a href="Fairtrade.pdf">
+                <li>Fairtrade</li>
+            </a>
+            <a href="Messy-Church.pdf">
+                <li>Messy Church</li>
+            </a>
+        </ul>
+    </article>
+
+    <article>
+        <h1>Our Policies</h1>
+        <ul>
+            <a href="Reopening-Guidance.pdf">
+                <li>Reopening Guidance</li>
+            </a>
+            <a href="Data-Protection.pdf">
+                <li>Data Protection</li>
+            </a>
+            <a href="Privacy.pdf">
+                <li>Privacy</li>
+            </a>
+            <a href="2020-Accounts.pdf">
+                <li>2020 Accounts</li>
+            </a>
+        </ul>
+    </article>
+</section>
+</div>
+
+</body>
+</html>

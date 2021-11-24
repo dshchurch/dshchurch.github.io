@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>What's On - DSH Church</title>
+    <script>
+        function toggleMenu() {
+            
+            var menu = document.getElementById("menu-list")
+            if(menu.style.display === "block") {
+                menu.style.display = "none";
+            }
+            else{
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div id="top-mobile-bar">
+        <h1><span>DSH</span> Church</h1>
+        <a id="menu" onclick= "toggleMenu()" >Menu</a>
+        </div>
+        <ul id="menu-list">
+            <a href="../"><li>Home</li></a>
+            <a href="../about"><li>About</li></a>
+            <a href=""><li>What's On?</li></a>
+            <a href="../help.pdf"><li>Help</li></a>
+        </ul>
+    </nav>
+
+<header id="title-bar">
+    <h1>What's On?</h1>
+</header>
+
+
+
+    <section id="next-services">
+        <h1>Next Services</h1>
+        <table>
+            <tr>
+                <td>Hopeman Kirk</td>
+                <td>Sun 28 November 10:30am</td>
+            </tr>
+            <tr>
+                <td>Duffus Kirk</td>
+                <td>Sun 5 December 10:30am</td>
+            </tr>
+            <tr>
+                <td>Spynie Kirk</td>
+                <td>Sun 12 December 10:30am</td>
+            </tr>
+            <tr>
+                <td>Hopeman Kirk</td>
+                <td>Sun 19 December 10:30am</td>
+            </tr>
+        </table>
+        </section>
+
+<div id="container">
+
+<section id="other-ways">
+    <article>
+        <h1>Other ways to share in reflection and prayer</h1>
+        <ul>
+                <li>Visit the <a href="https://www.youtube.com/channel/UCUo84xOas33sWSPCaQU8HkA">DSH YouTube Channel</a> for regular videos and live-streams</li>
+                <li>Visit the <a href="https://www.facebook.com/DuffusSpynieAndHopeman/posts/">DSH Facebook page</a></li>
+                <li>Phone (01343) 614450 for a pre-loaded reflection</li>
+                <li>Listen to Keith Community Radio (107.7FM/kcr.fm), Revving Up Mondays 7pm and Tuesdays 11am</li>
+                <li>BBC Radio Scotland, Sundays 7.30am, “New every Sunday” worship</li>
+                <li>BBC Scotland TV and BBC One TV Sundays</li>
+        </ul>
+    </article>
+
+</section>
+</div>
+
+</body>
+</html>
