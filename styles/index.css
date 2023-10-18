@@ -1,0 +1,98 @@
+
+.no-margin{
+    margin: 0;
+}
+img{
+    border-radius: 0.25rem;
+    background-color: var(--background-color);
+}
+.grid{
+    margin-bottom: 1rem;
+}
+.grid section article{
+    height: calc(100% - 13rem);
+}
+.space-between{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+svg{
+    fill: var(--contrast);
+    height: 1.3rem;
+}
+a:hover{
+    background-color: var(--contrast-focus);
+}
+
+.even-padding{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid img{
+    height:13rem;
+    width: 100%;
+    object-fit: cover;
+}
+article h4, article p{
+    margin-bottom: 1rem;
+}
+.width-100{
+    width:100%;
+}
+.height-100{
+    height: 100% !important; 
+}
+a svg{
+    margin-right: 0.4rem;
+}
+.margin-1-b{
+    margin-bottom: 1rem;
+}
+footer p{
+    margin-bottom: 0.5rem;
+}
+@media (max-width:992px){
+    .seperate-articles>section, .seperate-articles>article{
+        margin-bottom: 1rem;
+    }
+    .seperate-articles img{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+/*
+.links h4, .links p{
+    margin-bottom: 0.3rem;
+}
+.links a{
+    width: 100%;
+}
+.grid div{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}*/
+
+/*
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(/img/beach-2-med.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 4rem;
+    border-radius: 0.25rem;
+}
+header h1{
+    margin: 0;
+    color:white;
+    text-align: center;
+}
+*/
